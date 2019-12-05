@@ -33,5 +33,6 @@ urlpatterns = [
     url(r'^schema/$', schema_view),
     url(r'^docs/', include_docs_urls(title=API_TITLE, description=API_DESCRIPTION)),
     url(r'^api/auth/', include('djoser.urls')),
-    url(r'^api/auth/', include('djoser.urls.authtoken'))
+    url(r'^api/auth/', include('djoser.urls.authtoken')),
+    url(r'^api/auth/', include('djoser.urls.jwt')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
