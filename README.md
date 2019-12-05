@@ -94,4 +94,12 @@ python manage.py loaddata initial_data
 python manage.py runserver
 ```
 
+## Production Mode
+
+- Generate the static files
+
+```
+python manage.py collectstatic
+```
+
 Brought to you by [Grupo 03](https://acme.com)
