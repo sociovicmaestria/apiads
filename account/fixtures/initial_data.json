@@ -1,0 +1,155 @@
+[
+    {
+        "model": "account.Customer",
+        "pk": 1,
+        "fields": {
+          "full_name": "Juan Perez",
+          "cellphone": "999666555",
+          "birthdate": "2019-12-04",          
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "account.Customer",
+        "pk": 2,
+        "fields": {
+          "full_name": "Jose Palma",
+          "cellphone": "999555888",
+          "birthdate": "2019-12-04",          
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "account.Account",
+        "pk": 1,
+        "fields": {
+          "total_points": 30,
+          "total_visits": 12,
+          "first_joined": "2019-12-04", 
+          "commerce": 1, 
+          "customer": 1,   
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "account.Account",
+        "pk": 2,
+        "fields": {
+          "total_points": 23,
+          "total_visits": 11,
+          "first_joined": "2019-12-04", 
+          "commerce": 2, 
+          "customer": 1,   
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "account.Account",
+        "pk": 3,
+        "fields": {
+          "total_points": 45,
+          "total_visits": 3,
+          "first_joined": "2019-12-04", 
+          "commerce": 1, 
+          "customer": 2,   
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "account.Account",
+        "pk": 4,
+        "fields": {
+          "total_points": 56,
+          "total_visits": 4,
+          "first_joined": "2019-12-04", 
+          "commerce": 2, 
+          "customer": 2,   
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "account.Transaction",
+        "pk": 1,
+        "fields": {
+          "ticket_number": "001-2016",
+          "ticket_date": "2019-12-04", 
+          "amount": 105.20, 
+          "total_points": 105,
+          "transaction_date": "2019-12-04", 
+          "account": 1, 
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "account.Transaction",
+        "pk": 2,
+        "fields": {
+          "ticket_number": "002-2016",
+          "ticket_date": "2019-12-04", 
+          "amount": 80.20, 
+          "total_points": 80,
+          "transaction_date": "2019-12-04", 
+          "account": 2, 
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "account.Transaction",
+        "pk": 3,
+        "fields": {
+          "ticket_number": "003-2016",
+          "ticket_date": "2019-12-04", 
+          "amount": 70.20, 
+          "total_points": 70,
+          "transaction_date": "2019-12-04", 
+          "account": 3, 
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "account.Transaction",
+        "pk": 4,
+        "fields": {
+          "ticket_number": "004-2016",
+          "ticket_date": "2019-12-04", 
+          "amount": 50.20, 
+          "total_points": 50,
+          "transaction_date": "2019-12-04", 
+          "account": 4, 
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "account.Exchange",
+        "pk": 1,
+        "fields": {          
+          "exchange_date": "2019-12-04", 
+          "total_points": 10,
+          "account": 1,
+          "reward_detail": 1,
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    }
+]

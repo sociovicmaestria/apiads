@@ -1,0 +1,118 @@
+[
+    {
+        "model": "commerce.Category",
+        "pk": 1,
+        "fields": {
+          "name": "Comida",
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "commerce.Category",
+        "pk": 2,
+        "fields": {
+          "name": "Ropa y Accesorios",
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "commerce.Commerce",
+        "pk": 1,
+        "fields": {
+          "name": "Pardos Chicken",
+          "category": 1,
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "commerce.Commerce",
+        "pk": 2,
+        "fields": {
+          "name": "Renzo Costa",
+          "category": 2,
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "commerce.CommerceAddress",
+        "pk": 1,
+        "fields": {
+          "description": "Mall Aventura Plaza",
+          "latitude": -12.051650392916262,
+          "longitude": -77.09330429517786,
+          "commerce": 1,
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "commerce.CommerceAddress",
+        "pk": 2,
+        "fields": {
+          "description": "Mall Aventura Plaza",
+          "latitude": -12.051650392916262,
+          "longitude": -77.09330429517786,
+          "commerce": 2,
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "commerce.Reward",
+        "pk": 1,
+        "fields": {
+          "name": "Medio Pardos Braza",
+          "commerce": 1,
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "commerce.Reward",
+        "pk": 2,
+        "fields": {
+          "name": "Una billetera de Hombre",
+          "commerce": 2,
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "commerce.RewardDetail",
+        "pk": 1,
+        "fields": {
+          "points": 30,
+          "start_date": "2019-12-04",
+          "end_date": "2019-12-20",
+          "reward": 1,
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    },
+    {
+        "model": "commerce.RewardDetail",
+        "pk": 2,
+        "fields": {
+          "points": 20,
+          "start_date": "2019-12-04",
+          "end_date": "2019-12-20",
+          "reward": 2,
+          "user_create": 1,
+          "date_create": "2019-12-04",
+          "date_update": "2019-12-04"
+        }
+    }
+]
