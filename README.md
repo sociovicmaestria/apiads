@@ -1,5 +1,4 @@
-API Python Django - Grupo 03 - Ambientes de Desarrollo de Software
-======================================================
+# API Python Django - Grupo 03 - Ambientes de Desarrollo de Software
 
 ## Packages included:
 
@@ -11,6 +10,7 @@ API Python Django - Grupo 03 - Ambientes de Desarrollo de Software
 - [Djoser](https://djoser.readthedocs.io/en/latest/getting_started.html)
 
 ## Description
+
 This is an API project on Python - Django for the ADS final project
 
 ## Installation
@@ -22,11 +22,13 @@ This is an API project on Python - Django for the ADS final project
 Download Python installer for the [official Page](https://www.python.org/downloads/)
 
 #### Install Pip
+
 ```
 python -m pip install -U pip
 ```
 
 #### Install Virtualenv
+
 ```
 pip install virtualenv
 virtualenv env
@@ -34,6 +36,7 @@ env\Script\activate
 ```
 
 #### Install Main Packages
+
 ```
 pip install Django
 pip install djangorestframework
@@ -52,24 +55,28 @@ cd apiads
 ## Getting Started
 
 ### Migrations
+
 ```
-python manage.py makemigrations 
-python manage.py migrate 
+python manage.py makemigrations
+python manage.py migrate
 
 ```
 
 ### Load Initial Data
+
 ```
 python manage.py loaddata initial_data
 ```
 
 ### Create Super User
+
 ```
 python manage.py createsuperuser
 
 ```
 
 ### Development
+
 ```
 python manage.py runserver
 

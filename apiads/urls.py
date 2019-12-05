@@ -20,7 +20,7 @@ from rest_framework.documentation import include_docs_urls
 from django.conf import settings
 from django.conf.urls.static import static
 
-API_TITLE = 'API Python Django - Grupo 03'
+API_TITLE = 'ADS G3 API'
 API_DESCRIPTION = 'A Web API for creating and viewing schemas.'
 schema_view = get_schema_view(title=API_TITLE)
 

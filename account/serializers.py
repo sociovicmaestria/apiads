@@ -18,23 +18,23 @@ class AccountSerializer(serializers.ModelSerializer):
     customer_id = serializers.IntegerField(write_only=True)
 
     class Meta:
-        model = Customer
+        model = Account
         fields = ('id', 'total_points', 'total_visits', 'first_joined', 'commerce_id', 'commerce', 'customer_id', 'customer')
 
 class TransactionSerializer(serializers.ModelSerializer):
-    account = CommerceSerializer(read_only=True)
+    account = AccountSerializer(read_only=True)
     account_id = serializers.IntegerField(write_only=True)
 
     class Meta:
-        model = Customer
+        model = Transaction
         fields = ('id', 'ticket_number', 'ticket_date', 'amount', 'total_points', 'transaction_date', 'account_id', 'account')
 
 class ExchangeSerializer(serializers.ModelSerializer):
-    account = CommerceSerializer(read_only=True)
+    account = AccountSerializer(read_only=True)
     account_id = serializers.IntegerField(write_only=True)
     reward_detail = RewardDetailSerializer(read_only=True)
     reward_detail_id = serializers.IntegerField(write_only=True)
 
     class Meta:
-        model = Customer
+        model = Exchange
         fields = ('id', 'exchange_date', 'total_points', 'account_id', 'account', 'reward_detail_id', 'reward_detail')
