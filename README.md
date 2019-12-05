@@ -43,6 +43,7 @@ pip install djangorestframework
 pip install coreapi
 pip install django-filter
 pip install djoser
+pip install djangorestframework_simplejwt
 ```
 
 #### Configure Mysql Connection
@@ -51,7 +52,7 @@ pip install djoser
 pip install mysqlclient
 ```
 
-- If you have any errors, download [mysqlclient](https://www.lfd.uci.edu/~gohlke/pythonlibs/?source=post_page-----f946d0f6f9e3----------------------) and try with:
+- If you have any errors, check your python version and download the correct [mysqlclient](https://www.lfd.uci.edu/~gohlke/pythonlibs/?source=post_page-----f946d0f6f9e3----------------------) and try with:
 
 ```
 pip install mysqlclient-1.3.13-cp37-cp37m-win32.whl
