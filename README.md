@@ -102,6 +102,13 @@ python manage.py runserver
 python manage.py collectstatic
 ```
 
+- Consider the files below to deploy the app in Pivotal Cloud Foundry
+
+    manifest.yml
+    runtime.txt
+    requirements.txt
+    Procfile    
+
 - Run task with Pivotal. E.g.
 
 ```
