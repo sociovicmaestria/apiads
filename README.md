@@ -102,4 +102,10 @@ python manage.py runserver
 python manage.py collectstatic
 ```
 
+- Run task with Pivotal. E.g.
+
+```
+cf run-task django-api "python manage.py migrate" --name migrate
+```
+
 Brought to you by [Grupo 03](https://acme.com)
