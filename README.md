@@ -45,6 +45,20 @@ pip install django-filter
 pip install djoser
 ```
 
+#### Configure Mysql Connection
+
+```
+pip install mysqlclient
+```
+
+- If you have any errors, download [mysqlclient](https://www.lfd.uci.edu/~gohlke/pythonlibs/?source=post_page-----f946d0f6f9e3----------------------) and try with:
+
+```
+pip install mysqlclient-1.3.13-cp37-cp37m-win32.whl
+```
+
+- Don't forget put the connection parameters in DATABASES section in the settings.py file
+
 ### Clone Repository
 
 ```
@@ -59,7 +73,12 @@ cd apiads
 ```
 python manage.py makemigrations
 python manage.py migrate
+```
 
+### Create Super User
+
+```
+python manage.py createsuperuser
 ```
 
 ### Load Initial Data
@@ -68,18 +87,10 @@ python manage.py migrate
 python manage.py loaddata initial_data
 ```
 
-### Create Super User
-
-```
-python manage.py createsuperuser
-
-```
-
 ### Development
 
 ```
 python manage.py runserver
-
 ```
 
 Brought to you by [Grupo 03](https://acme.com)
