@@ -6,3 +6,4 @@ coreapi
 django-filter
 djoser
 djangorestframework_simplejwt
+django-cors-headers

@@ -26,7 +26,7 @@ SECRET_KEY = 'kpffggcd8oo__bhq6h%wdi67bjj*!8xx0*nacykuk76fkn*9o9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'django-api.cfapps.io']
+ALLOWED_HOSTS = ['*', '127.0.0.1', 'localhost', 'django-api.cfapps.io']
 
 
 # Application definition
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'djoser',
     'rest_framework.authtoken',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -98,7 +99,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'apiads.urls'
 
